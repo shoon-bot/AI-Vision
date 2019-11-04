@@ -1,0 +1,81 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+BATCH_SIZE	../config.py	/^BATCH_SIZE = 64$/;"	kind:variable	line:13
+CHANNELS	../config.py	/^CHANNELS = 3$/;"	kind:variable	line:12
+NUM_CLASSES	../config.py	/^NUM_CLASSES = len(mapping)$/;"	kind:variable	line:10
+SHAPE	../config.py	/^SHAPE = 250$/;"	kind:variable	line:11
+activations_to_pickle.py	../activations_to_pickle.py	1;"	kind:file	line:1
+args	../activations_to_pickle.py	/^args = parser.parse_args()$/;"	kind:variable	line:34
+args	../data_to_pickle.py	/^args = parser.parse_args()$/;"	kind:variable	line:99
+args	../predict.py	/^args = parser.parse_args()$/;"	kind:variable	line:86
+args	../train.py	/^args = parser.parse_args()$/;"	kind:variable	line:105
+config	../config.py	/^config = tf.ConfigProto()$/;"	kind:variable	line:15
+config.py	../config.py	1;"	kind:file	line:1
+create_model	../train.py	/^def create_model():$/;"	kind:function	line:10
+create_pickle	../utils.py	/^def create_pickle(data, path):$/;"	kind:function	line:81
+data_to_pickle.py	../data_to_pickle.py	1;"	kind:file	line:1
+df	../mnist_to_data.py	/^df = [pandas.read_csv('..\/sign-language-mnist\/sign_mnist_train.csv'), pandas.read_csv('..\/sig/;"	kind:variable	line:7
+df	../mnist_to_data.py	/^df = pandas.concat(df, axis=0, ignore_index=True)$/;"	kind:variable	line:8
+evaluate	../train.py	/^def evaluate(test_xs, test_ys):$/;"	kind:function	line:93
+get_activations	../activations_to_pickle.py	/^def get_activations(xs):$/;"	kind:function	line:8
+get_label	../predict.py	/^def get_label(y):$/;"	kind:function	line:11
+h	../mnist_to_data.py	/^w, h = 28, 28$/;"	kind:variable	line:5
+img	../mnist_to_data.py	/^	img = np.reshape(row.values[1:], (w, h))$/;"	kind:variable	line:12
+label	../mnist_to_data.py	/^	label = row.values[0]$/;"	kind:variable	line:11
+live_feed	../predict.py	/^def live_feed(device=0):$/;"	kind:function	line:29
+load_data	../data_to_pickle.py	/^def load_data(path):$/;"	kind:function	line:8
+load_mobilenet	../utils.py	/^def load_mobilenet():$/;"	kind:function	line:113
+load_pickle	../utils.py	/^def load_pickle(path):$/;"	kind:function	line:95
+mapping	../config.py	/^    mapping = json.load(f)$/;"	kind:variable	line:8
+mnist_to_data.py	../mnist_to_data.py	1;"	kind:file	line:1
+model	../predict.py	/^model = load_model(args.model)$/;"	kind:variable	line:93
+model	../train.py	/^model = create_model()$/;"	kind:variable	line:121
+np	../mnist_to_data.py	/^import numpy as np$/;"	kind:namespace	line:3
+np	../utils.py	/^import numpy as np$/;"	kind:namespace	line:4
+parser	../activations_to_pickle.py	/^parser = argparse.ArgumentParser()$/;"	kind:variable	line:32
+parser	../data_to_pickle.py	/^parser = argparse.ArgumentParser()$/;"	kind:variable	line:96
+parser	../predict.py	/^parser = argparse.ArgumentParser()$/;"	kind:variable	line:81
+parser	../train.py	/^parser = argparse.ArgumentParser()$/;"	kind:variable	line:102
+path	../activations_to_pickle.py	/^		path = os.path.join(args.pickle, variable)$/;"	kind:variable	line:51
+path	../data_to_pickle.py	/^        path = os.path.join(args.pickle, variable)$/;"	kind:variable	line:118
+plt	../utils.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:5
+predict	../predict.py	/^def predict(x):$/;"	kind:function	line:20
+predict.py	../predict.py	1;"	kind:file	line:1
+predict_random	../predict.py	/^def predict_random(test_xs, test_ys, show=False):$/;"	kind:function	line:69
+preprocess_data	../data_to_pickle.py	/^def preprocess_data(xs, ys):$/;"	kind:function	line:45
+read_image	../utils.py	/^def read_image(path):$/;"	kind:function	line:13
+resize_image	../utils.py	/^def resize_image(img):$/;"	kind:function	line:39
+sess	../config.py	/^sess = tf.Session(config=config)/;"	kind:variable	line:17
+show_image	../utils.py	/^def show_image(img):$/;"	kind:function	line:27
+shuffle_in_unison	../utils.py	/^def shuffle_in_unison(a, b):$/;"	kind:function	line:66
+split_data	../data_to_pickle.py	/^def split_data(xs, ys, offset=0.8):$/;"	kind:function	line:72
+test_activations	../activations_to_pickle.py	/^	test_activations = get_activations(test_xs)$/;"	kind:variable	line:45
+test_activations	../train.py	/^test_activations = load_pickle(os.path.join(args.path, 'test_activations'))$/;"	kind:variable	line:118
+test_xs	../activations_to_pickle.py	/^	test_xs = load_pickle(os.path.join(args.pickle, 'test_xs'))$/;"	kind:variable	line:43
+test_xs	../predict.py	/^test_xs = load_pickle(os.path.join(args.images, 'test_xs'))$/;"	kind:variable	line:96
+test_xs	../train.py	/^test_xs = load_pickle(os.path.join(args.path, 'test_xs'))$/;"	kind:variable	line:115
+test_ys	../predict.py	/^test_ys = load_pickle(os.path.join(args.images, 'test_ys'))$/;"	kind:variable	line:97
+test_ys	../train.py	/^test_ys = load_pickle(os.path.join(args.path, 'test_ys'))$/;"	kind:variable	line:116
+tf	../config.py	/^import tensorflow as tf$/;"	kind:namespace	line:2
+train	../train.py	/^def train(train_xs, train_ys, test_xs, test_ys):$/;"	kind:function	line:80
+train.py	../train.py	1;"	kind:file	line:1
+train_activations	../activations_to_pickle.py	/^	train_activations = get_activations(train_xs)$/;"	kind:variable	line:44
+train_activations	../train.py	/^train_activations = load_pickle(os.path.join(args.path, 'train_activations'))$/;"	kind:variable	line:117
+train_xs	../activations_to_pickle.py	/^	train_xs = load_pickle(os.path.join(args.pickle, 'train_xs'))$/;"	kind:variable	line:42
+train_xs	../train.py	/^train_xs = load_pickle(os.path.join(args.path, 'train_xs'))$/;"	kind:variable	line:113
+train_ys	../train.py	/^train_ys = load_pickle(os.path.join(args.path, 'train_ys'))$/;"	kind:variable	line:114
+transfer_model	../utils.py	/^transfer_model = load_mobilenet()/;"	kind:variable	line:128
+utils.py	../utils.py	1;"	kind:file	line:1
+variables	../activations_to_pickle.py	/^	variables = ['train_activations', 'test_activations']$/;"	kind:variable	line:48
+variables	../data_to_pickle.py	/^    variables = ['xs', 'ys', 'train_xs', 'train_ys', 'test_xs', 'test_ys']$/;"	kind:variable	line:115
+w	../mnist_to_data.py	/^w, h = 28, 28$/;"	kind:variable	line:5
+xs	../data_to_pickle.py	/^    xs, ys = load_data(args.data)$/;"	kind:variable	line:110
+xs	../data_to_pickle.py	/^    xs, ys = preprocess_data(xs, ys)$/;"	kind:variable	line:111
+yawcam_url	../predict.py	/^def yawcam_url(ip):$/;"	kind:function	line:63
+ys	../data_to_pickle.py	/^    xs, ys = load_data(args.data)$/;"	kind:variable	line:110
+ys	../data_to_pickle.py	/^    xs, ys = preprocess_data(xs, ys)$/;"	kind:variable	line:111
